@@ -32,32 +32,32 @@ p {
   --ifm-code-font-size: 95%;
 
   /* colors from ui / ux */
-  --colors-mainWhite: #ffffff;
-  --colors-background: #f9f9f9;
-  --colors-darkerBlack: #262626;
-  --colors-primaryBlack: #7b7b7b;
-  --colors-secondaryBlack: #c8c8c8;
-  --colors-lighterBlack: #f4f4f4;
-  --colors-darkerRed: #860e1d;
-  --colors-primaryRed: #e11931;
-  --colors-secondaryRed: #ec7482;
-  --colors-lighterRed: #fce8ea;
-  --colors-darkerGreen: #246634;
-  --colors-primaryGreen: #3eac58;
-  --colors-secondaryGreen: #8acc9a;
-  --colors-lighterGreen: #ecf6ee;
-  --colors-darkerBlue: #235689;
-  --colors-primaryBlue: #3c91e6;
-  --colors-secondaryBlue: #89bcef;
-  --colors-lighterBlue: #ebf4fc;
-  --colors-darkerOrange: #985619;
-  --colors-primaryOrange: #ff912a;
-  --colors-secondaryOrange: #ffbc7e;
-  --colors-lighterOrange: #fff4ea;
-  --colors-darkerYellow: #986e04;
-  --colors-primaryYellow: #ffba08;
-  --colors-secondaryYellow: #ffd569;
-  --colors-lighterYellow: #fff8e6;
+  --ds-mainWhite: #ffffff;
+  --ds-background: #f9f9f9;
+  --ds-darkerBlack: #262626;
+  --ds-primaryBlack: #7b7b7b;
+  --ds-secondaryBlack: #c8c8c8;
+  --ds-lighterBlack: #f4f4f4;
+  --ds-darkerRed: #860e1d;
+  --ds-primaryRed: #e11931;
+  --ds-secondaryRed: #ec7482;
+  --ds-lighterRed: #fce8ea;
+  --ds-darkerGreen: #246634;
+  --ds-primaryGreen: #3eac58;
+  --ds-secondaryGreen: #8acc9a;
+  --ds-lighterGreen: #ecf6ee;
+  --ds-darkerBlue: #235689;
+  --ds-primaryBlue: #3c91e6;
+  --ds-secondaryBlue: #89bcef;
+  --ds-lighterBlue: #ebf4fc;
+  --ds-darkerOrange: #985619;
+  --ds-primaryOrange: #ff912a;
+  --ds-secondaryOrange: #ffbc7e;
+  --ds-lighterOrange: #fff4ea;
+  --ds-darkerYellow: #986e04;
+  --ds-primaryYellow: #ffba08;
+  --ds-secondaryYellow: #ffd569;
+  --ds-lighterYellow: #fff8e6;
 }
 
 .docusaurus-highlight-code-line {
@@ -95,4 +95,9 @@ ul.tabs {
 
 .codeBlock_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
   border-radius: 0 !important;
+}
+
+.documentation_frame {
+  background-color: #f4f4f4;
+  padding: 7.5rem 6.5rem;
 }
