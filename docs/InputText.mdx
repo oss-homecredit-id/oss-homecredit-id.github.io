@@ -1,0 +1,72 @@
+---
+id: InputText
+title: Input Text
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import {InputText} from '@site/src/components/InputText/InputText.tsx';
+import styles from '@site/src/pages/styles.module.css';
+import {InputTextDocWeb} from '@site/src/components/InputText/InputTextDocWeb.tsx'
+import {useState} from 'react'
+
+export const Stuff = () => {
+  const [state, setState] = useState('asda');
+  return (
+    <p>{state}</p>
+  )
+}
+
+<React.Fragment>
+<p>Text fields let users input and edit texts. They allow a simple two way communications between the platform and the users. These text boxes are designed for the users to communicate using their keyboards in the space allowed.</p>
+<h3>Preview</h3>
+<div className="tab_frame">
+<Tabs
+  defaultValue="tsx"
+  values={[
+    { label: 'Typescript', value: 'tsx', },
+    { label: 'Dart', value: 'dart', },
+  ]
+}>
+<TabItem value="tsx">
+  <InputText
+    label="label name"
+    id="inputText"
+    value="asd"
+    placeholder="input text"
+    errorText="hi"
+  />
+
+```tsx
+<InputText
+  label="label name"
+  id="inputText"
+  value="asd"
+  placeholder="input text"
+  errorText="hi"
+/>
+```
+
+</TabItem>
+<TabItem value="dart">
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    Center(
+      child: Text(
+        'Hello, world!',
+        textDirection: TextDirection.ltr,
+      ),
+    ),
+  );
+}
+
+```
+
+</TabItem>
+</Tabs>
+</div>
+</React.Fragment>

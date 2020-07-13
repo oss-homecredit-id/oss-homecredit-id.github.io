@@ -6,6 +6,9 @@
  */
 
 /* You can override the default Infima variables here. */
+em {
+  font-style: normal;
+}
 h1,
 h2,
 h3,
@@ -27,6 +30,34 @@ p {
   --ifm-footer-background-color: #010101;
   --ifm-footer-color: #f4f4f4;
   --ifm-code-font-size: 95%;
+
+  /* colors from ui / ux */
+  --colors-mainWhite: #ffffff;
+  --colors-background: #f9f9f9;
+  --colors-darkerBlack: #262626;
+  --colors-primaryBlack: #7b7b7b;
+  --colors-secondaryBlack: #c8c8c8;
+  --colors-lighterBlack: #f4f4f4;
+  --colors-darkerRed: #860e1d;
+  --colors-primaryRed: #e11931;
+  --colors-secondaryRed: #ec7482;
+  --colors-lighterRed: #fce8ea;
+  --colors-darkerGreen: #246634;
+  --colors-primaryGreen: #3eac58;
+  --colors-secondaryGreen: #8acc9a;
+  --colors-lighterGreen: #ecf6ee;
+  --colors-darkerBlue: #235689;
+  --colors-primaryBlue: #3c91e6;
+  --colors-secondaryBlue: #89bcef;
+  --colors-lighterBlue: #ebf4fc;
+  --colors-darkerOrange: #985619;
+  --colors-primaryOrange: #ff912a;
+  --colors-secondaryOrange: #ffbc7e;
+  --colors-lighterOrange: #fff4ea;
+  --colors-darkerYellow: #986e04;
+  --colors-primaryYellow: #ffba08;
+  --colors-secondaryYellow: #ffd569;
+  --colors-lighterYellow: #fff8e6;
 }
 
 .docusaurus-highlight-code-line {
@@ -34,4 +65,34 @@ p {
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+ul.tabs {
+  box-shadow: 0 2px 4px 0 #c8c8c8;
+}
+
+.tab_frame {
+  box-shadow: 0 2px 4px 0 #c8c8c8;
+}
+
+.component_usage_frame {
+  display: flex;
+  flex-direction: column;
+}
+
+.component_usage_container {
+  display: flex;
+}
+
+.component_usage_preview {
+  flex: 2;
+  max-width: 70%;
+}
+
+.compoennt_usage_option {
+  flex: 1;
+}
+
+.codeBlock_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
+  border-radius: 0 !important;
 }
