@@ -5,17 +5,9 @@ title: Input Text
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import {InputText} from '@site/src/components/InputText/InputText.tsx';
+import {InputText} from '@site/src/lib/Web/reactjs-direct/src/Components/InputText/InputText';
 import styles from '@site/src/pages/styles.module.css';
-import {InputTextDocWeb} from '@site/src/components/InputText/InputTextDocWeb.tsx'
 import {useState} from 'react'
-
-export const Stuff = () => {
-  const [state, setState] = useState('asda');
-  return (
-    <p>{state}</p>
-  )
-}
 
 <React.Fragment>
 <p>Text fields let users input and edit texts. They allow a simple two way communications between the platform and the users. These text boxes are designed for the users to communicate using their keyboards in the space allowed.</p>
@@ -29,26 +21,44 @@ export const Stuff = () => {
   ]
 }>
 <TabItem value="tsx">
-  <InputText
-    label="label name"
-    id="inputText"
-    value="asd"
-    placeholder="input text"
-    errorText="hi"
-  />
+  <div className="documentation_frame">
+    <InputText
+      label="Input Label"
+      id="inputText"
+      placeholder="Fill the input text"
+    />
+  </div>
 
 ```tsx
 <InputText
-  label="label name"
+  label="Input Label"
   id="inputText"
-  value="asd"
-  placeholder="input text"
-  errorText="hi"
+  value="value function"
+  placeholder="Fill the input text"
 />
 ```
 
 </TabItem>
 <TabItem value="dart">
+<div className="documentation_frame">
+  <iframe
+    height="265"
+    scrolling="no"
+    title="test flutter"
+    src="https://codepen.io/frontenddeveloperhcid/embed/gOPjzeO?height=265&theme-id=light&data-default-tab=result&data-show-tab-bar=false"
+    frameBorder="no"
+  >
+    See the Pen{" "}
+    <a href="https://codepen.io/frontenddeveloperhcid/pen/gOPjzeO">
+      test flutter
+    </a>{" "}
+    by frontenddeveloper.hcid (
+    <a href="https://codepen.io/frontenddeveloperhcid">
+      @frontenddeveloperhcid
+    </a>
+    ) on <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+</div>
 
 ```dart
 import 'package:flutter/material.dart';
