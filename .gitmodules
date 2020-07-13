@@ -1,0 +1,6 @@
+[submodule "src/lib/Web/reactjs-direct"]
+	path = src/lib/Web/reactjs-direct
+	url = https://github.com/oss-homecredit-id/reactjs-direct.git
+[submodule "src/lib/Flutter/flutter-direct"]
+	path = src/lib/Flutter/flutter-direct
+	url = https://github.com/oss-homecredit-id/flutter-direct.git
