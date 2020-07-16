@@ -1,3 +1,7 @@
+#IMPORTANT
+to pull this repo use this command
+\$ git clone -b web-first-init --recursive https://github.com/oss-homecredit-id/oss-homecredit-id.github.io.git
+
 # Website
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
