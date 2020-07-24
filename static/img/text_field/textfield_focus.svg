@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="54" viewBox="0 0 256 54">
+  <g fill="none" fill-rule="evenodd" transform="translate(-72 -90)">
+    <rect width="400" height="235" fill="#FFF" stroke="#F4F4F4" stroke-width="2"/>
+    <g transform="translate(72 90)">
+      <path fill="#F9F9F9" d="M4,0 L252,0 C254.209139,-4.05812251e-16 256,1.790861 256,4 L256,38 L256,38 L0,38 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z"/>
+      <rect width="256" height="2" y="38" fill="#262626"/>
+      <text fill="#262626" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+        <tspan x="8" y="31">Placeholder Te</tspan>
+      </text>
+      <text fill="#262626" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="8" y="13">Label</tspan>
+      </text>
+    </g>
+    <rect width="1" height="22" x="187" y="106" fill="#262626"/>
+  </g>
+</svg>

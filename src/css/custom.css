@@ -6,17 +6,15 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url("http://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap");
+
+html,
+body,
+* {
+  font-family: "Roboto", sans-serif !important;
+}
 em {
   font-style: normal;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 :root {
@@ -71,10 +69,6 @@ ul.tabs {
   box-shadow: 0 2px 4px 0 #c8c8c8;
 }
 
-.tab_frame {
-  box-shadow: 0 2px 4px 0 #c8c8c8;
-}
-
 .component_usage_frame {
   display: flex;
   flex-direction: column;
@@ -95,9 +89,4 @@ ul.tabs {
 
 .codeBlock_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
   border-radius: 0 !important;
-}
-
-.documentation_frame {
-  background-color: #f4f4f4;
-  padding: 7.5rem 6.5rem;
 }

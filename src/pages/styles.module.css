@@ -47,3 +47,46 @@
   background-color: #ffffff;
   text-decoration: none;
 }
+
+.tab_frame {
+  box-shadow: 0 2px 4px 0 #c8c8c8;
+}
+.documentation_frame {
+  background-color: #f4f4f4;
+  padding: 7.5rem 6.5rem;
+}
+
+.documentation_frame.half_frame {
+  width: 50%;
+  padding: 3rem 5rem;
+}
+
+.tab_content {
+  padding: 0 1rem;
+}
+
+.flex_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pair_row > div {
+  flex: 1 0 45%;
+  display: flex;
+  position: relative;
+  margin-right: 2rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 48%;
+  margin-bottom: 1.5rem;
+}
+
+.pair_row > div:nth-child(2n) {
+  margin-right: 0;
+}
+
+.card_nude {
+  border: 2px solid var(--ds-lighterBlack);
+  min-height: 235px;
+}

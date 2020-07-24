@@ -6,8 +6,10 @@ title: Input Text
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import {InputText} from '@site/src/lib/Web/reactjs-direct/src/Components/InputText/InputText';
+import {Text} from '@site/src/lib/Web/reactjs-direct/src/Components/Text/Text';
 import styles from '@site/src/pages/styles.module.css';
 import {useState} from 'react'
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <React.Fragment>
 <p>Text fields let users input and edit texts. They allow a simple two way communications between the platform and the users. These text boxes are designed for the users to communicate using their keyboards in the space allowed.</p>
@@ -20,63 +22,125 @@ import {useState} from 'react'
     { label: 'Dart', value: 'dart', },
   ]
 }>
-<TabItem value="tsx">
-  <div className="documentation_frame">
+  <TabItem value="tsx">
+    <div className={styles.documentation_frame}>
+      <InputText
+        label="Input Label"
+        id="inputText"
+        placeholder="Fill the input text"
+      />
+    </div>
+
+  ```tsx
     <InputText
       label="Input Label"
       id="inputText"
+      value="value function"
       placeholder="Fill the input text"
     />
-  </div>
+  ```
 
-```tsx
-<InputText
-  label="Input Label"
-  id="inputText"
-  value="value function"
-  placeholder="Fill the input text"
-/>
-```
+  </TabItem>
+  <TabItem value="dart">
+    <div className={styles.documentation_frame}>
+      <iframe
+        height="265"
+        scrolling="no"
+        title="test flutter"
+        src="https://codepen.io/frontenddeveloperhcid/embed/gOPjzeO?height=265&theme-id=light&data-default-tab=result&data-show-tab-bar=false"
+        frameBorder="no"
+      >
+        See the Pen{" "}
+        <a href="https://codepen.io/frontenddeveloperhcid/pen/gOPjzeO">
+          test flutter
+        </a>{" "}
+        by frontenddeveloper.hcid (
+        <a href="https://codepen.io/frontenddeveloperhcid">
+          @frontenddeveloperhcid
+        </a>
+        ) on <a href="https://codepen.io">CodePen</a>.
+      </iframe>
+    </div>
 
-</TabItem>
-<TabItem value="dart">
-<div className="documentation_frame">
-  <iframe
-    height="265"
-    scrolling="no"
-    title="test flutter"
-    src="https://codepen.io/frontenddeveloperhcid/embed/gOPjzeO?height=265&theme-id=light&data-default-tab=result&data-show-tab-bar=false"
-    frameBorder="no"
-  >
-    See the Pen{" "}
-    <a href="https://codepen.io/frontenddeveloperhcid/pen/gOPjzeO">
-      test flutter
-    </a>{" "}
-    by frontenddeveloper.hcid (
-    <a href="https://codepen.io/frontenddeveloperhcid">
-      @frontenddeveloperhcid
-    </a>
-    ) on <a href="https://codepen.io">CodePen</a>.
-  </iframe>
+  ```dart
+    import 'package:flutter/material.dart';
+
+    void main() {
+      runApp(
+        Center(
+          child: Text(
+            'Hello, world!',
+            textDirection: TextDirection.ltr,
+          ),
+        ),
+      );
+    }
+
+  ```
+
+  </TabItem>
+</Tabs>
 </div>
 
-```dart
-import 'package:flutter/material.dart';
-
-void main() {
-  runApp(
-    Center(
-      child: Text(
-        'Hello, world!',
-        textDirection: TextDirection.ltr,
-      ),
-    ),
-  );
-}
-
-```
-
-</TabItem>
+<h3>Text Field</h3>
+<div className={styles.tab_frame}>
+<Tabs
+defaultValue="usage"
+  values={[
+    { label: 'Usage', value: 'usage', },
+    { label: 'States', value: 'states', },
+    { label: 'Anatomy', value: 'anatomy', },
+    { label: 'Specs', value: 'specs', },
+  ]
+}>
+  <TabItem value="usage">
+		<div className={styles.tab_content}>
+			<Text variant="small">Text fields let users communicate using texts to the interface, it allows for a designated location to enter the texts.</Text>
+			<div className={`${styles.documentation_frame} ${styles.half_frame}`}>
+				<img src={useBaseUrl('img/text_field/textfield_usage.png')} alt="textfield_usage" />
+			</div>
+			<Text variant="small">In a form page.</Text>
+		</div>
+	</TabItem>
+  <TabItem value="states">
+		<div className={styles.tab_content}>
+			<Text variant="small">Text fields let users communicate using texts to the interface, it allows for a designated location to enter the texts.</Text>
+			<div className={`${styles.flex_row} ${styles.pair_row}`}>
+				<div className={styles.card_nude}>
+					<Text> Inactive </Text>
+					<div>
+						<InputText label="label" placeholder="Placeholder Text" />
+					</div>
+				</div>
+				<div className={styles.card_nude}>
+					<Text> Focus </Text>
+					<div>
+						<img src={useBaseUrl('img/text_field/textfield_focus.svg')} alt="textfield_focus" />
+					</div>
+				</div>
+				<div className={styles.card_nude}>
+					<Text> Active </Text>
+					<div>
+						<InputText label="label" placeholder="Placeholder Text" value="Placeholder Text" />
+					</div>
+				</div>
+				<div className={styles.card_nude}>
+					<Text> Disabled </Text>
+					<div>
+						<InputText label="label" placeholder="Placeholder Text" disabled />
+					</div>
+				</div>
+				<div className={styles.card_nude}>
+					<Text> Warning </Text>
+					<div>
+						<InputText label="label" placeholder="Placeholder Text" errorText="Helper Text (single line)" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</TabItem>
+  <TabItem value="anatomy"></TabItem>
+  <TabItem value="specs"></TabItem>
 </Tabs>
 </div>
 </React.Fragment>
