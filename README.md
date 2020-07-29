@@ -1,7 +1,7 @@
 #IMPORTANT
 How to use :
 
-1. \$ git clone --branch web-first-init --recurse-submodules -j8 https://github.com/oss-homecredit-id/oss-homecredit-id.github.io.git
+1. \$ git clone --branch web-first-init --recurse-submodules https://github.com/oss-homecredit-id/oss-homecredit-id.github.io.git
 2. npm run init-web
 
 # Website
