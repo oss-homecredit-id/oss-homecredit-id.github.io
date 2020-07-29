@@ -1,3 +1,9 @@
+#IMPORTANT
+How to use :
+
+1. \$ git clone --branch web-first-init --recurse-submodules -j8 https://github.com/oss-homecredit-id/oss-homecredit-id.github.io.git
+2. npm run init-web
+
 # Website
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
