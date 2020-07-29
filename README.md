@@ -1,6 +1,8 @@
 #IMPORTANT
-to pull this repo use this command
-\$ git clone -b web-first-init --recursive https://github.com/oss-homecredit-id/oss-homecredit-id.github.io.git
+How to use :
+
+1. \$ git clone --branch web-first-init --recurse-submodules -j8 https://github.com/oss-homecredit-id/oss-homecredit-id.github.io.git
+2. npm run init-web
 
 # Website
 

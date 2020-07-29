@@ -7,7 +7,8 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "build-DS": "./node_modules/.bin/webpack --mode production"
+    "build-DS": "./node_modules/.bin/webpack --mode production",
+    "init-web": "yarn && cd ./src/lib/Web/reactjs-direct && git checkout reactjs-direct-typescript && npm install"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.58",
